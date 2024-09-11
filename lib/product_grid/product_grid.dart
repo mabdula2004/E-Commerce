@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'product_model.dart';
-import 'product_detail.dart';
+import '../product_detail/product_detail.dart';
+import '../product_model/product_model.dart';
+
 
 class ProductGrid extends StatelessWidget {
   final List<Product> products;

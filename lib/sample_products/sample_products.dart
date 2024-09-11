@@ -1,4 +1,5 @@
-import 'product_model.dart';
+import '../product_model/product_model.dart';
+
 
 List<Product> sampleProducts = [
   Product(
