@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'product_model.dart';
+import '../product_model/product_model.dart';
+
 
 class CartModel extends ChangeNotifier {
   final List<Product> _cart = [];
@@ -17,6 +18,6 @@ class CartModel extends ChangeNotifier {
   }
 
   double get totalPrice {
-    return _cart.fold(0.0, (sum, product) => sum + product.price);
+    return _cart.fold(0.0, (sum, product) => sum + (product.price ?? 0.0)); // Handle null safety
   }
 }

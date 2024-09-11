@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'cart_model.dart';
+import '../cart_model/cart_model.dart';
+
 
 class CartScreen extends StatelessWidget {
   @override
